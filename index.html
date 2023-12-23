@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="./img/logosmall.webp">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>رایتل</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="relative">
+        <!-- heder one -->
+        <div class="w-[100%] h-16 border-b border-gray-200 flex justify-between md:px-12 xl:px-40">
+            <div class="flex text-xs pt-5 lg:text-[14px]">
+                <p class="mr-5 text-gray-400">مشترک‌های سازمانی </p>
+                <p class="mr-8 pb-7 text-[#e6007e] border-b-2 border-[#e6007e]">مشترک‌های شخصی</p>
+            </div>
+            <div class="flex  pt-5">
+                <i class="bi bi-search ml-5"></i>
+                <div class="w-[1px] h-4 bg-black mt-1 ml-5"></div>
+                <p class="ml-5">EN</p>
+                <img class="hidden md:flex mt-[-10px]" src="./img/logo.svg" alt="">
+                <button class="hidden lg:block w-32 h-8 rounded-lg bg-[#e6007e] text-white text-sm">ترابرد به
+                    رایتل</button>
+            </div>
+        </div>
+        <!-- heder tow -->
+        <div
+            class="w-[100%] h-16 border-b border-gray-200 flex justify-between lg:justify-start px-3 md:px-12 xl:px-40">
+            <div class="flex pt-1">
+                <i class="bi bi-list lg:hidden text-[30px] cursor-pointer ml-5 list "></i>
+                <img class="w-15 h-10 mt-2" src="./img/logo2.png" alt="">
+            </div>
+            <div class="flex pt-2">
+                <button class="lg:hidden w-28 h-8 rounded-lg bg-[#e6007e] text-white text-sm mt-2">ترابرد به
+                    رایتل</button>
+                <img class="md:hidden w-20 h-12" src="./img/logo.svg" alt="">
+            </div>
+            <!-- hambrger menu -->
+            <div
+                class="lg:hidden duration-500 absolute top-0 z-20  w-[70%] h-[100vh] bg-[#a92b70] shadow-2xl  shadow-black mr-[-75%] pt-10  px-3 parent-hambrger">
+                <div class="flex justify-between">
+                    <img class="w-16 h-16" src="./img/logo-wight.jpeg" alt="">
+                    <div class="flex">
+                        <p class="text-white text-[25px] font-extrabold mt-3 ">EN </p>
+                        <i class="bi bi-x text-white text-[40px] font-extrabold cursor-pointer close"></i>
+                    </div>
+                </div>
+                <ul class="mt text-white text-xl">
+                    <li class="mt-7 flex justify-between">
+                        <a href="#">محصولات</a>
+                        <i class="bi bi-chevron-left "></i>
+                    </li>
+                    <li class="mt-7 flex justify-between">
+                        <a href="#">خدمات و سرگرمی</a>
+                        <i class="bi bi-chevron-left "></i>
+                    </li>
+                    <li class="mt-7 flex justify-between">
+                        <a href="#">طرح ها و پیشنهاد‌ها</a>
+                        <i class="bi bi-chevron-left "></i>
+                    </li>
+                    <li class="mt-7 flex justify-between">
+                        <a href="#">ثبت نام و خرید </a>
+                        <i class="bi bi-chevron-left "></i>
+                    </li>
+                    <li class="mt-7 flex justify-between">
+                        <a href="#">رایتل من</a>
+                        <i class="bi bi-chevron-left "></i>
+                    </li>
+                    <li class="mt-7 flex justify-between">
+                        <a href="#">درباره رایتل</a>
+                        <i class="bi bi-chevron-left "></i>
+                    </li>
+                    <li class="mt-7 flex justify-between">
+                        <a href="#">پشتیبانی</a>
+                        <i class="bi bi-chevron-left "></i>
+                    </li>
+                </ul>
+            </div>
+            <!-- ------------- -->
+
+            <div class="hidden lg:flex">
+                <ul class="flex mr-10 pt-5 submenu">
+                    <li><a href="#" class="ml-10 ">محصولات</a></li>
+                    <li><a href="#" class="ml-10 ">خدمات و سرگرمی</a></li>
+                    <li><a href="#" class="ml-10 ">طرح ها و پیشنهاد‌ها</a></li>
+                    <li><a href="#" class="ml-10 ">ثبت نام و خرید </a></li>
+                    <li><a href="#" class="ml-10 ">رایتل من</a></li>
+                    <li><a href="#" class="ml-10 ">درباره رایتل</a></li>
+                    <li><a href="#" class="ml-10 ">پشتیبانی</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- submenu -->
+        <div class="submenuchild w-[80%] absolute top-[120px] z-10">
+            <div class="hidden w-[80%] h-16 bg-[#e9eef1] pt-5 pr-8 mx-40">
+                <ul class="flex">
+                    <li class="ml-8">سیم کارت ها</li>
+                    <li>سایر</li>
+                </ul>
+            </div>
+            <div class="hidden w-[80%] h-16 bg-[#e9eef1] pt-5 pr-8 mx-40">
+                <ul class="flex">
+                    <li class="ml-8"> خدمات ارتباطی</li>
+                    <li>خدمات نوین</li>
+                </ul>
+            </div>
+            <div class="hidden w-[80%] h-16 bg-[#e9eef1] pt-5 pr-8 mx-40">
+                <ul class="flex">
+                    <li class="ml-8"> مشترک جدید</li>
+                    <li class="ml-8">بسته ها</li>
+                    <li class="ml-8">پیشنهاد‌های ویژه </li>
+                    <li class="ml-8">تعرفه ها</li>
+                </ul>
+            </div>
+            <div class="hidden w-[80%] h-16 bg-[#e9eef1] pt-5 pr-8 mx-40">
+                <ul class="flex">
+                    <li class="ml-8">ثبت نام</li>
+                    <li class="ml-8">ترابرد</li>
+                    <li class="ml-8">امور نمایندگی ها</li>
+                    <li class="ml-8">مراکز توریغ</li>
+                </ul>
+            </div>
+            <div class="hidden w-[80%] h-16 bg-[#e9eef1] pt-5 pr-8 mx-40">
+                <ul class="flex">
+                    <li class="ml-8">پرداخت قبض</li>
+                    <li class="ml-8">خرید شارژ</li>
+                    <li class="ml-8">رایتل من</li>
+
+                </ul>
+            </div>
+            <div class="hidden w-[80%] h-16 bg-[#e9eef1] pt-5 pr-8 mx-40">
+                <ul class="flex">
+                    <li class="ml-8">رویدادها</li>
+                    <li class="ml-8">اخبار</li>
+                    <li class="ml-8">معرفی رایتل</li>
+                    <li class="ml-8">همکاری با رایتل</li>
+                    <li class="ml-8">تماس با رایتل</li>
+                </ul>
+            </div>
+            <div class="hidden w-[80%] h-16 bg-[#e9eef1] pt-5 pr-8 mx-40">
+                <ul class="flex">
+                    <li class="ml-8"> خدمات ارتباطی</li>
+                    <li>خدمات نوین</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <section>
+        <!-- slider------------>
+        <div class="w-[80%] overflow-x-hidden mt-10 mx-10 lg:flex lg:mx-40">
+            <div class="lg:w-[45%] overflow-hidden">
+                <div class="swiper mySwiperone rounded-xl  ">
+                    <div class="swiper-wrapper w-[100%] h-[400px] lg:h-[500px]">
+                        <div class="swiper-slide"><img src="./img/slid1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/slide2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/slide3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/slide4.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img/slide5.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-[45%] lg:mt-32 text-center">
+                <div class="swiper mySwipertwo rounded-xl  ">
+                    <div class="swiper-wrapper w-[100%] h-[300px]">
+                        <div class="swiper-slide">
+                            <p class="text-[40px] text-[#e6007e] font-black">به مناسبت تولد 12 سالگی رایتل</p>
+                            <p class="text-[30px] text-gray-600 font-bold">بسته های تخفیفی</p>
+                            <p class="text-[20px] text-gray-300 font-bold">در اپلیکیشن رایتل‌من و #227*</p>
+                            <button class="w-[100%]  h-10 bg-[#c8d400] rounded-xl mt-2 lg:w-[50%]">اطلاعات
+                                بیشتر</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="text-[40px] text-blue-600 font-black">سیم‌کارت‌های آبی</p>
+                            <p class="text-[30px] text-gray-600 font-bold">با بسته‌های جذاب</p>
+                            <p class="text-[20px] text-gray-300 font-bold">و شماره‌های رند</p>
+                            <button class="w-[100%] h-10 bg-[#c8d400] rounded-xl mt-2 lg:w-[50%]">اطلاعات بیشتر</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="text-[40px] text-[#e6007e] font-black">سیم‌کارت دائمی X100 و X40</p>
+                            <p class="text-[30px] text-gray-600">پُرگیگ‌ترین سیم‌کارت کشور !</p>
+                            <button class="w-[100%] h-10 bg-[#c8d400] rounded-xl mt-2 lg:w-[50%]">اطلاعات بیشتر</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="text-[40px] text-[#e6007e] font-black">یک شروع پر انرژی !</p>
+                            <p class="text-[30px] text-gray-600 font-bold">سیم‌کارت اعتباری رایتل</p>
+                            <p class="text-[20px] text-gray-300 font-bold">با بسته های انرژی</p>
+                            <button class="w-[100%] h-10 bg-[#c8d400] rounded-xl mt-2 lg:w-[50%]">اطلاعات بیشتر</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="text-[40px] text-[#e6007e] font-black"> سهولت استفاده از خدمات</p>
+                            <p class="text-[30px] text-gray-600 font-bold">با اپلیکیشن رایتل من</p>
+                            <p class="text-[20px] text-gray-300 font-bold">ا گیگابایت اینترنت هدیه نصب</p>
+                            <button class="w-[100%] h-10 bg-[#c8d400] rounded-xl mt-2 lg:w-[50%]">اطلاعات بیشتر</button>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination "></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!-- icons------------->
+        <div
+            class="w-[80%] h-[450px] flex justify-evenly mt-10 mx-20 lg:mx-40 lg:mt-40 lg:h-[200px]  cursor-pointer text-[#e6007e] text-center">
+            <div class="lg:flex justify-evenly xl:ml-[-80px]">
+                <div class="hover:text-black ml-12 ">
+                    <img src="./img/icon2.svg" alt="" class="hover:brightness-0">
+                    <p class="mt-2">خرید سیم‌کارت</p>
+                </div>
+                <div class="hover:text-black ml-12">
+                    <img src="./img/icon3.svg" alt="" class="hover:brightness-0">
+                    <p class="mt-2">خرید بسته</p>
+                </div>
+                <div class="hover:text-black ml-12">
+                    <img src="./img/icon4.svg" alt="" class="hover:brightness-0">
+                    <p class="mt-2">افزایش اعتباری</p>
+                </div>
+            </div>
+            <div class="lg:flex justify-evenly xl:mr-[-80px]">
+                <div class="hover:text-black ">
+                    <img src="./img/icon5.svg" alt="" class="hover:brightness-0">
+                    <p class="mt-2">پرداخت صورتحساب</p>
+                </div>
+                <div class="hover:text-black ml-12">
+                    <img src="./img/icon6.svg" alt="" class="hover:brightness-0">
+                    <p class="mt-2">رایتل من</p>
+                </div>
+                <div class="hover:text-black ml-12">
+                    <img src="./img/icon7.svg" alt="" class="hover:brightness-0">
+                    <p class="mt-2">نواحی تحت پوشش</p>
+                </div>
+            </div>
+        </div>
+        <!--------------------->
+        <div class="w-[80%] h-[200px] mx-10 lg:mx-40 flex flex-col items-center">
+            <h2 class="text-[#9c2776] text-[40px] font-black mb-5">پیشنهادهای ویژه</h2>
+            <div>
+                <button class=" w-24 h-10 border border-[#e6007e] rounded-3xl bg-[#e6007e] text-white">ویژه</button>
+                <button class="w-48 h-10 border border-[#e6007e] rounded-3xl text-[#e6007e] bg-white">خدمات ارتباطی
+                    نوین</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- section just img------- -->
+        <div class="lg:flex justify-between mb-10 mx-5 md:mx-56 ">
+            <div class="w-[100%] h-auto  text-center overflow-hidden">
+                <img  src="./img/slide5.png" alt="" class="rounded-xl hover:scale-[1.1] duration-500" >
+                <h2 class="text-[20px] text-[#e6007e] font-black  ">اپلیکیشن رایتل من</h2>
+                <p class="text-[14px] text-gray-600">با نصب اپلیکیشن رایتل من 1 گیگابایت اینترنت هدیه دریافت
+                    کنید</p>
+                <button class="w-40  h-10 bg-[#c8d400] rounded-xl  lg:w-[50%] mt-12">اطلاعات
+                    بیشتر</button>
+            </div>
+
+            <div class="w-[100%] h-auto  text-center mt-10 lg:mt-0 lg:mx-5 overflow-hidden">
+                <img src="./img/section3-2.png" alt="" class="rounded-xl hover:scale-[1.1] duration-500">
+                <h2 class="text-[20px] text-blue-600 font-black  ">بسته‌های آبـی</h2>
+                <p class="text-[16px] text-gray-600">از 4 تا 140 گیگابایت</p>
+                <button class="w-40 h-10 bg-[#c8d400] rounded-xl  lg:w-[50%] mt-12">اطلاعات
+                    بیشتر</button>
+            </div>
+
+            <div class="w-[100%] h-auto  text-center mt-10 lg:mt-0 overflow-hidden">
+                <img src="./img/slide3.png" alt="" class="rounded-xl hover:scale-[1.1] duration-500">
+                <h2 class="text-[20px] text-[#e6007e] font-black  "> سیم‌کارت دائمی با 100 گیگ اینترنت</h2>
+                <p class="text-[16px] text-gray-600">سیم‌کارت دائمی با امکان انتخاب شماره</p>
+                <button class="w-40 h-10 bg-[#c8d400] rounded-xl  lg:w-[50%] mt-12">اطلاعات
+                    بیشتر</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <main class="w-full border">
+        <section class="w-[100%] bg2 bg-cover bg-center px-6 py-10 md:px-12 xl:px-96">
+          <div class="w-[100%] h-[100%] 2xl:container mx-auto flex flex-wrap justify-end">
+            <div class="w-[560px] bg-white rounded px-8 py-6">
+              <div class="md:flex justify-between items-center">
+                <h3 class="w-[100%] md:w-[50%] text-center text-[26px] text-purple-800 font-bold">ترابرد شماره به رایتل</h3>
+                <figure class="w-[100%] md:w-[50%] flex justify-end my-8"><img class="mx-auto md:m-0" src="img/icon1.svg" alt=""></figure>
+              </div>
+              <p class="text-center md:text-justify my-6">
+                شما می‌توانید از طریق این سامانه نسبت به ثبت‌ درخواست ترابرد شماره تلفن همراه خود به رایتل اقدام نمایید. پس از ثبت‌نام و تکمیل فرآیند ترابرد، امکان بهره‌مندی از خدمات نوین ارتباطی اپراتور پیشگام بدون تغییر شماره، برای شما فراهم می‌گردد.
+              </p>
+              <div class="flex flex-wrap justify-evenly">
+                <a href="#" class="w-[100%]  text-center  my-4 md:w-[auto] bg-[#c8d400] px-10 py-2 rounded-lg text-[14px] hover:bg-[#51591e] hover:text-white duration-300">درخواست ترابرد شماره</a>
+                <a href="#" class="w-[100%]  text-center  my-4 md:w-[auto] border border-red-500 text-[red] px-10 py-2 rounded-lg text-[14px] hover:bg-[#e6007e] hover:text-white duration-300">راهنمای ترابرد شماره</a>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="w-[100%] px-6 py-10 md:px-12 xl:px-96">
+          <div class="w-[100%] h-[100%] 2xl:container mx-auto">
+            <div class="md:flex flex-wrap justify-evenly">
+              <figure class="w-full md:w-[50%]  flex justify-center"><img src="img/iPhone.png" alt=""></figure>
+              <div class="w-full md:w-[50%] ">
+                <h2 class="text-center md:text-right text-[30px] text-purple-800 font-bold mb-4">اپلیکیشن رایتل من</h2>
+                <div class="border-r-2 p-6">
+                  <ul>
+                    <li class="mb-6 flex items-center">
+                      <span class="flex justify-center items-center w-[50px] h-[50px] rounded-[50%] bg-[#DDDDDD] text-[#A6A6A6] ml-6">1</span>
+                      <span class="text-[#A6A6A6] font-bold">خرید بسته</span>
+                    </li>
+                    <li class="mb-6 flex items-center">
+                      <span class="flex justify-center items-center w-[50px] h-[50px] rounded-[50%] bg-[#DDDDDD] text-[#A6A6A6] ml-6">2</span>
+                      <span class="text-[#A6A6A6] font-bold">افزایش اعتبار</span>
+                    </li>
+                    <li class="mb-6 flex items-center">
+                      <span class="flex justify-center items-center w-[50px] h-[50px] rounded-[50%] bg-[#DDDDDD] text-[#A6A6A6] ml-6">3</span>
+                      <span class="text-[#A6A6A6] font-bold">مدیریت سیم کارت ها</span>
+                    </li>
+                  </ul>
+                  <div class="flex flex-wrap justify-center md:justify-end">
+                    <a href="#" class="flex w-[80%] justify-center md:w-[auto] bg-[#c8d400] px-9 py-3 rounded-md text-[#333333] font-bold hover:bg-[#71ce7e] hover:text-white duration-300 ml-2 mb-4">نسخه اندروید</a>
+                    <a href="#" class="flex w-[80%] justify-center md:w-[auto] bg-[#c8d400] px-9 py-3 rounded-md text-[#333333] font-bold hover:bg-[#71ce7e] hover:text-white duration-300 mb-4">نسخه ios</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section class="w-[100%] border">
+          <figure><img class="w-full" src="img/baste_dastdooz.png" alt=""></figure>
+        </section>
+    
+        <section class="w-[100%] px-6 py-10 md:px-12 xl:px-9">
+          <div class="w-[100%] h-[100%] 2xl:container mx-auto">
+            <div class="flex flex-wrap justify-evenly">
+
+                
+              <figure class="w-[350px] h-[570px] my-2 overflow-hidden">
+                <img class="w-full h-[200px] hover:scale-[1.2] duration-500" src="img/news/01.jpg" alt="">
+                <figcaption class="w-full h-[370px] py-4">
+                  <div class="text-[gray] text-sm">
+                    <time> 10 آبان 1402 </time> - 
+                    <span> اخبار </span>
+                  </div>
+                  <h2 class="py-4 text-[purple] font-bold text-[18px]">حضور رایتل در نمایشگاه آیتکس 1402 مشهد</h2>
+                  <p class="text-justify">
+                    شرکت خدمات ارتباطی رایتل در این نمایشگاه با حضور کارشناسان، متخصصان و نمایندگان فروش، آماده ارائه آخرین سرویس‌ها، دستاوردها و محصولات جهت توسعه همکاری، پشتیبانی و ظرفیت‌سازی‌های نوآورانه مبتنی بر صنعت فناوری و دیجیتال است.
+                  </p>
+                  <div class="flex justify-center mt-14">
+                    <a href="#" class="bg-[#c8d400] px-9 py-3 rounded-md text-[#333333] font-bold hover:bg-[#71ce7e] hover:text-white duration-300"> اطلاعات بیشتر </a>
+                  </div>
+                </figcaption>
+              </figure>
+
+
+              <figure class="w-[350px] h-[570px] my-2 overflow-hidden">
+                <img class="w-full h-[200px] hover:scale-[1.2] duration-500" src="img/news/02.jpg" alt="">
+                <figcaption class="w-full h-[370px] py-4">
+                  <div class="text-[gray] text-sm">
+                    <time> 9 آبان 1402 </time> - 
+                    <span> اخبار </span>
+                  </div>
+                  <h2 class="py-4 text-[purple] font-bold text-[18px]"> حضور رایتل در اولین نمایشگاه بین‌المللی گردشگری سلامت غرب کشور</h2>
+                  <p class="text-justify">
+                    حضور شرکت خدمات ارتباطی رایتل در نمایشگاه بین‌المللی گردشگری سلامت غرب کشور با هدف ارائه خدمات به بازدیدکنندگان و برقراری ارتباط و تعامل برای همکاری‌ و مشارکت در زمینه‌های گردشگری و سلامت انجام گرفت.
+                  </p>
+                  <div class="flex justify-center mt-14">
+                    <a href="#" class="bg-[#c8d400] px-9 py-3 rounded-md text-[#333333] font-bold hover:bg-[#71ce7e] hover:text-white duration-300"> اطلاعات بیشتر </a>
+                  </div>
+                </figcaption>
+              </figure>
+
+
+              <figure class="w-[350px] h-[570px] my-2 overflow-hidden">
+                <img class="w-full h-[200px] hover:scale-[1.2] duration-500" src="img/news/03.jpg" alt="">
+                <figcaption class="w-full h-[370px] py-4">
+                  <div class="text-[gray] text-sm">
+                    <time> 8 آبان 1402 </time> - 
+                    <span> اخبار </span>
+                  </div>
+                  <h2 class="py-4 text-[purple] font-bold text-[18px]"> حضور رایتل در نمایشگاه آیتکس 1402 مشهد</h2>
+                  <p class="text-justify">
+                    شرکت خدمات ارتباطی رایتل به عنوان یک بنگاه اقتصادی فعال در حوزه فناوری اطلاعات و ارتباطات از «همایش الگوی مطلوب تصمیم‌سازی در امور اقتصادی کشور» حمایت کرد.
+                  </p>
+                  <div class="flex justify-center mt-14">
+                    <a href="#" class="bg-[#c8d400] px-9 py-3 rounded-md text-[#333333] font-bold hover:bg-[#71ce7e] hover:text-white duration-300"> اطلاعات بیشتر </a>
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="w-[100%] flex justify-center mt-6">
+                <a href="#" class="text-[#e6007e] text-sm"> نمایش همه اخبار </a>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <footer class="w-[100%] px-6 py-10 pt-24 md:px-12 xl:px-32 bg-[#aa296e]">
+          <div class="flex w-[100%] h-[100%] md:flex flex-wrap 2xl:container mx-auto">
+            <div class="order-2 w-full mt-6 md:w-1/4 md:order-1 text-center md:text-start">
+              <h2 class="text-white font-bold mb-6">محصولات و خدمات</h2>
+              <ul>
+                <li><a href="#" class="text-xs text-white">خرید بسته اینترنتی</a></li>
+                <li><a href="#" class="text-xs text-white">خرید شارژ</a></li>
+                <li><a href="#" class="text-xs text-white">تبدیل سیم‌کارت</a></li>
+                <li><a href="#" class="text-xs text-white">کد‌های دستوری</a></li>
+                <li><a href="#" class="text-xs text-white">خرید و ثبت نام سیم‌کارت</a></li>
+                <li><a href="#" class="text-xs text-white">تعرفه‌ها</a></li>
+                <li><a href="#" class="text-xs text-white">خدمات سازمانی</a></li>
+              </ul>
+            </div>
+            <div class="order-3 w-full mt-6 md:w-1/4 md:order-1 text-center md:text-start">
+              <h2 class="text-white font-bold mb-6">دسترسی کوتاه</h2>
+              <ul>
+                <li><a href="#" class="text-xs text-white">ورود به سامانه رایتل من</a></li>
+                <li><a href="#" class="text-xs text-white">استعلام وضعیت سیم‌کارت</a></li>
+                <li><a href="#" class="text-xs text-white">راهنمای تنظیمات</a></li>
+                <li><a href="#" class="text-xs text-white">پرسش‌های متداول</a></li>
+                <li><a href="#" class="text-xs text-white"> نقشه سایت </a></li>
+                <li><a href="#" class="text-xs text-white">رهگیری مرسوله پستی</a></li>
+                <li><a href="#" class="text-xs text-white">ارتباط با تامین کنندگان</a></li>
+                <li><a href="#" class="text-xs text-white">سنجش مصرف اینترنت</a></li>
+              </ul>
+            </div>
+            <div class="order-4 w-full mt-6 md:w-1/4 md:order-1 text-center md:text-start">
+              <h2 class="text-white font-bold mb-6">درگاه‌های مرتبط</h2>
+              <ul>
+                <li><a href="#" class="text-xs text-white">سامانه خبری حراست شرکت سرمایه گذاری تامین اجتماعی</a></li>
+                <li><a href="#" class="text-xs text-white">سامانه اخبار و گزارشات حراست رایتل</a></li>
+                <li><a href="#" class="text-xs text-white">سازمان تنظیم مقررات و ارتباطات رادیویی</a></li>
+                <li><a href="#" class="text-xs text-white">استعلام تعداد خطوط مشترکین</a></li>
+                <li><a href="#" class="text-xs text-white"> سازمان تامین اجتماعی </a></li>
+                <li><a href="#" class="text-xs text-white">پایگاه دولت همراه</a></li>
+                <li><a href="#" class="text-xs text-white">سامانه دسترسی آزاد به اطلاعات</a></li>
+              </ul>
+            </div>
+            <div class="order-1 w-full mt-6 md:w-1/4 md:order-1 text-center md:text-start">
+              <h2 class="text-white font-bold mb-6"><a href="#">تماس با ما</a></h2>
+              <ul>
+                <li><a href="tel:200" class="text-xs text-white">تماس از خطوط رایتلی: 200</a></li>
+                <li><a href="tel:09202000000" class="text-xs text-white">تماس از سایر خطوط : 09202000000</a></li>
+                <li><a href="#" class="text-xs text-white">فروشگاه‌های رایتل</a></li>
+                <li><a href="#" class="text-xs text-white">نمایندگان فروش و خدمات</a></li>
+              </ul>
+              <div class="flex flex-wrap items-center my-2 justify-center md:justify-start">
+                <figure class="border border-zinc-400 rounded-xl w-[100px] h-[80px] ml-2"><img class="w-full h-full" src="img/footer/namad2.svg" alt=""></figure>
+                <figure class="border border-zinc-400 rounded-xl w-[100px] h-[80px]"><img class="w-full h-full" src="img/footer/namad1.svg" alt=""></figure>
+              </div>
+              <div class="flex flex-wrap justify-center md:justify-start">
+                <figure class="w-[25px] ml-2"><img src="img/footer/icon/1.svg" alt=""></figure>
+                <figure class="w-[25px] ml-2"><img src="img/footer/icon/2.svg" alt=""></figure>
+                <figure class="w-[25px] ml-2"><img src="img/footer/icon/3.svg" alt=""></figure>
+                <figure class="w-[25px] ml-2"><img src="img/footer/icon/4.svg" alt=""></figure>
+                <figure class="w-[25px] ml-2"><img src="img/footer/icon/5.svg" alt=""></figure>
+                <figure class="w-[25px] ml-2"><img src="img/footer/icon/6.svg" alt=""></figure>
+                <figure class="w-[25px] ml-2"><img src="img/footer/icon/7.svg" alt=""></figure>
+                <figure class="w-[25px] ml-2"><img src="img/footer/icon/8.svg" alt=""></figure>
+                <figure class="w-[25px] ml-2"><img src="img/footer/icon/9.svg" alt=""></figure>
+              </div>
+            </div>
+            <p class="order-5 w-[100%] text-center text-white text-[12px] mt-10 md:order-1">
+              برند رایتل به عنوان یک نام و علامت تجاری ثبت شده است. کلیه حقوق این وب سایت برای رایتل محفوظ است.
+            </p>
+          </div>
+        </footer>
+      </main>
+
+
+
+
+    <script>
+        // hamderger menu --------------------
+        let list = document.querySelector('.list')
+        let _close = document.querySelector('.close');
+        let hambrger = document.querySelector('.parent-hambrger')
+
+
+        list.addEventListener('click', () => {
+            hambrger.classList.remove('mr-[-75%]')
+        })
+
+        _close.addEventListener('click', () => {
+            hambrger.classList.add('mr-[-75%]')
+        })
+        // hamderger menu --------------------
+
+
+        // sub menu     ----------------------
+        let submenu = document.querySelectorAll('.submenu > li');
+        let submenuchild = document.querySelectorAll('.submenuchild > div');
+
+        submenu.forEach((val, i) => {
+            if (i == 0) {
+                val.addEventListener('mousemove', () => {
+                    submenuchild[i].classList.remove('hidden')
+                })
+                val.addEventListener('mouseleave', () => {
+                    submenuchild[i].classList.add('hidden')
+                })
+            }
+            else if (i == 1) {
+                val.addEventListener('mousemove', () => {
+                    submenuchild[i].classList.remove('hidden')
+                })
+                val.addEventListener('mouseleave', () => {
+                    submenuchild[i].classList.add('hidden')
+                })
+            }
+            else if (i == 2) {
+                val.addEventListener('mousemove', () => {
+                    submenuchild[i].classList.remove('hidden')
+                })
+                val.addEventListener('mouseleave', () => {
+                    submenuchild[i].classList.add('hidden')
+                })
+            }
+            else if (i == 3) {
+                val.addEventListener('mousemove', () => {
+                    submenuchild[i].classList.remove('hidden')
+                })
+                val.addEventListener('mouseleave', () => {
+                    submenuchild[i].classList.add('hidden')
+                })
+            }
+            else if (i == 4) {
+                val.addEventListener('mousemove', () => {
+                    submenuchild[i].classList.remove('hidden')
+                })
+                val.addEventListener('mouseleave', () => {
+                    submenuchild[i].classList.add('hidden')
+                })
+            }
+            else if (i == 5) {
+                val.addEventListener('mousemove', () => {
+                    submenuchild[i].classList.remove('hidden')
+                })
+                val.addEventListener('mouseleave', () => {
+                    submenuchild[i].classList.add('hidden')
+                })
+            }
+            else if (i == 6) {
+                val.addEventListener('mousemove', () => {
+                    submenuchild[i].classList.remove('hidden')
+                })
+                val.addEventListener('mouseleave', () => {
+                    submenuchild[i].classList.add('hidden')
+                })
+            }
+
+        })
+
+        // slider---------------------------->
+        var swiperone = new Swiper(".mySwiperone", {
+            spaceBetween: 80,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        var swiperone = new Swiper(".mySwipertwo", {
+            spaceBetween: 80,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+    </script>
+
+</body>
+
+</html>

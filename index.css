@@ -1,0 +1,12 @@
+@font-face {
+    font-family: iranSans;
+    src: url(./fonts/IRANSansWeb\(FaNum\).woff2);
+}
+
+body{
+    font-family: iranSans;
+}
+
+.bg2{
+    background-image: url('./img/Bg-2.png');
+}
