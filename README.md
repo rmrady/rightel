@@ -18,7 +18,7 @@ An awesome Rightel template to practice your project!
 
  ## About The Project
 
-![Product Screenshot](img/readme.svg)
+![Product Screenshot](img/readme.jpg)
 
 One of my teammates and I decided to design the Rightel site because it was one of the good sites in Farsi and at that time we wanted to practice the slider more and this site became an example.
  ### Built With
